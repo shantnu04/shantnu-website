@@ -1,39 +1,95 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Shantnu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-      h1{
-        color:darkblue;
-      }
+    <title>My Study Planner</title>
 
-     body{
-        background-color:pink;
-     }
-     </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Welcome to Shantnu website</h1>
 
-    <h2>About Me</h2>
-    <p>Hi! My name is Shantnu.</p>
-    <p>I like Minecraft, Coding and Video Editing.</p>
+    <!-- Header -->
+    <header>
+        <h1>📚 My Study Planner</h1>
+        <p>Plan smart. Study better. Achieve more. 🚀</p>
+    </header>
 
-    <h2>My Hobbies</h2>
 
-    <h3>🎮 Minecraft</h3>
-    <p>I love playing Minecraft and making cool builds.</p>
+    <!-- Main Content -->
+    <main>
 
-    <h3>💻 Coding</h3>
-    <p>I am learning how to make websites.</p>
+        <!-- Welcome Section -->
+        <section class="card">
+            <h2>👋 Welcome, Shantnu!</h2>
+            <p>Let's make today's study session productive.</p>
+        </section>
 
-    <h3>🎬 Video Editing</h3>
-    <p>I like editing videos.</p>
 
-    <h2>Contact</h2>
-    <p>Thanks for visiting my website!</p>
+        <!-- Add Task Section -->
+        <section class="card">
+            <h2>➕ Add a Study Task</h2>
 
-</body>
-</html>
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="e.g. Complete Maths Chapter 3"
+            >
+
+            <button onclick="addTask()">Add Task</button>
+        </section>
+
+
+        <!-- Today's Tasks -->
+        <section class="card">
+            <h2>📋 Today's Tasks</h2>
+
+            <ul id="taskList">
+                <!-- Tasks will appear here -->
+            </ul>
+        </section>
+
+
+        <!-- Study Subjects -->
+        <section class="card">
+            <h2>📖 Subjects</h2>
+
+            <div class="subjects">
+                <button>📐 Maths</button>
+                <button>🔬 Science</button>
+                <button>📚 English</button>
+                <button>🌍 Social Science</button>
+                <button>📝 Hindi</button>
+            </div>
+        </section>
+
+
+        <!-- Daily Goal -->
+        <section class="card">
+            <h2>🎯 Today's Goal</h2>
+
+            <p>Complete your important tasks and revise what you studied today.</p>
+
+            <button>Start Studying 🚀</button>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with ❤️ by Shantnu</p>
+        <p>© 2026 My Study Planner</p>
+    </footer>
+
+
+    <!-- JavaScript -->
+     <script src="script.js"></script>
+
+     </body>
+
+    <html>
